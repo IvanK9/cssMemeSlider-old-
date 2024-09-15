@@ -6,6 +6,62 @@
     <title>MemeSlider</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="title">
+            MemeSlider
+        </h1>
+    </header>
+    <main class="slider">
+        <div class="slider__wrapper">
+            <input type="radio" name="slide" id="slide-1" checked />
+            <input type="radio" name="slide" id="slide-2" />
+            <input type="radio" name="slide" id="slide-3" />
+            <input type="radio" name="slide" id="slide-4" />
+
+            <div class="slider__slides">
+                <ul class="slider__list">
+                    <li class="slider__item">
+                        <img src="#" alt="#" id="img-1" class="slider__img">
+                    </li>
+                    <li class="slider__item">
+                        <img src="#" alt="#" id="img-2" class="slider__img">
+                    </li>
+                    <li class="slider__item">
+                        <img src="#" alt="#" id="img-3" class="slider__img">
+                    </li>
+                    <li class="slider__item">
+                        <img src="#" alt="#" id="img-4" class="slider__img">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="slider__content">
+
+                <div class="slider__descr descr">
+                    <div class="descr__wrapper">
+                        <span class="descr__text">
+                            После бессоной ночи просишь пару минут на доработку
+                        </span>
+                        <span class="descr__text">
+                            Когда предлагают выполнить тестовое задание
+                        </span>
+                        <span class="descr__text">
+                            Реклама курсов сеньора за 3 месяца
+                        </span>
+                        <span class="descr__text">
+                            Когда просят почитать спецификацию
+                        </span>
+                    </div>
+                </div>
+
+                <div class="slider__control">
+                    <label for="slide-1" class="slider__btn"></label>
+                    <label for="slide-2" class="slider__btn"></label>
+                    <label for="slide-3" class="slider__btn"></label>
+                    <label for="slide-4" class="slider__btn"></label>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
