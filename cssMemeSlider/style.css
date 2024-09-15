@@ -125,11 +125,6 @@ body {
     opacity: 0.5;
 }
 
-/* .slider__control .slider__btn:active {
-    background-color: #36D695;
-    opacity: 0.5;
-} */
-
 /* ПЕРЕКЛЮЧЕНИЕ БУЛЛИТОВ */
 
 #slide-1:checked ~ .slider__content .slider__control label:nth-of-type(1) .slider__btn,
