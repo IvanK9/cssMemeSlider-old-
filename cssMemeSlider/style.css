@@ -1,0 +1,176 @@
+html {
+    box-sizing: border-box;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: local('Georgia-Regular'),
+        url('./fonts/georgia-regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Georgia", "Arial", sans-serif;
+    background-color: #36D695;
+}
+
+.title {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: #FFD740;
+}
+
+.slider input[type=radio] {
+    display: none;
+}
+
+.slider__wrapper {
+    max-width: 70vw;
+    height: 70vh;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #FFD740;
+}
+
+.slider__slides {
+    display: flex;
+    width: 65vw;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    overflow: hidden;
+}
+
+.slider__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slider__item {
+    height: 50vh;
+    border-radius: 1rem;
+}
+
+.slider__img {
+    height: 50vh;
+    width: 65vw;
+    border-radius: 1rem;
+}
+
+.slider__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    height: 4rem;
+}
+
+.descr {
+    width: 30rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.descr__wrapper {
+    display: flex;
+}
+
+.descr__text {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.5em;
+    width: 30rem;
+    color: #B939D3;
+}
+
+.slider__control {
+    display: flex;
+    column-gap: 0.75rem;
+}
+
+.slider__btn {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0.3rem;
+    border: 0.1rem solid #B939D3ed;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out,
+        opacity 0.5s ease-in-out;
+}
+
+.slider__control .slider__btn:hover {
+    background-color: #B939D3;
+    opacity: 0.5;
+}
+
+.slider__control .slider__btn:active {
+    background-color: #36D695;
+    opacity: 0.5;
+}
+
+/* ПЕРЕКЛЮЧЕНИЕ БУЛЛИТОВ */
+
+#slide-1:checked ~ .slider__content .slider__control label:nth-of-type(1),
+#slide-2:checked ~ .slider__content .slider__control label:nth-of-type(2),
+#slide-3:checked ~ .slider__content .slider__control label:nth-of-type(3),
+#slide-4:checked ~ .slider__content .slider__control label:nth-of-type(4) {
+    background-color: #B939D3;
+}
+
+/* ПЕРЕКЛЮЧЕНИЕ ТЕКСТА */
+
+#slide-1:checked ~ .slider__content .descr .descr__text {
+    transform: translate(0);
+    transition: transform 0.5s linear ;
+}
+
+#slide-2:checked ~ .slider__content .descr .descr__text {
+    transform: translateX(-100%);
+    transition: transform 0.5s linear ;
+}
+
+#slide-3:checked ~ .slider__content .descr .descr__text {
+    transform: translateX(-200%);
+    transition: transform 0.5s linear ;
+}
+
+#slide-4:checked ~ .slider__content .descr .descr__text {
+    transform: translateX(-300%);
+    transition: transform 0.5s linear ;
+}
+
+
+/* ПЕРЕКЛЮЧЕНИЕ КАРТИНОК */
+
+#slide-1:checked ~ .slider__slides .slider__list .slider__item {
+    transform: translate(0);
+    transition: transform 0.5s linear ;
+}
+
+#slide-2:checked ~ .slider__slides .slider__list .slider__item {
+    transform: translateX(-100%);
+    transition: transform 0.5s linear ;
+}
+
+#slide-3:checked ~ .slider__slides .slider__list .slider__item {
+    transform: translateX(-200%);
+    transition: transform 0.5s linear ;
+}
+
+#slide-4:checked ~ .slider__slides .slider__list .slider__item {
+    transform: translateX(-300%);
+    transition: transform 0.5s linear ;
+}
+
