@@ -38,7 +38,7 @@
 @media (max-width: 920px) {
 
     .slider__wrapper {
-        height: 70vh;
+        height: 75vh;
     }
 
     .slider__content {
@@ -54,7 +54,7 @@
 @media (max-width: 620px) {
 
     .slider__wrapper {
-        height: 55vh;
+        height: 65vh;
     }
 
     .slider__item {
@@ -67,11 +67,11 @@
     }
 
     .descr {
-        max-width: 25rem;
+        max-width: 20rem;
     }
 
     .descr__text {
-        width: 25rem;
+        width: 20rem;
     }
 
     .slider__control {
